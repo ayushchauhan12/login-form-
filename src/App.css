@@ -1,4 +1,5 @@
-.App {
+
+App {
   text-align: center;
 }
 
@@ -36,3 +37,101 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+/* .tilt{
+  width: ;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tilt {
+  z-index: 8;
+  background-color: aliceblue;
+  /* background: rgb(0, 0, 0); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8em;
+   /* left: -18px; */
+   left: 38%;
+  height: 500px;
+  width: 400px;
+  
+  background-color: rgba(0, 100, 0, 0.091);
+  backdrop-filter: blur(8px);
+  color: rgb(255, 254, 254);
+  border: 5px solid black;
+  border-radius: 20px;
+
+  transform-style: preserve-3d;
+  
+  .head{
+    margin: 0;
+    position: relative;
+    top: 0%;
+  }
+  .inner-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    /* width: 40px; */
+    font-style: italic;
+    color: white;
+    transform: translateZ(60px);
+
+  }
+}
+
+.inp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4%;
+  margin: 3%;
+}
+
+.button{
+  /* background-color: none; */
+  display: block;
+  height:  40px;
+  /* padding: 10px; */
+  width: 100px;
+  background: none;
+  margin-top: 10px;
+  /* margin: auto; */
+  border-radius:37%;
+  border: 2px solid #50ffdc;
+  font-size: 18px;
+  font-family: "Lato";
+  color: #50ffdc;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  /* transition-delay: 0.5ms; */
+  transition-timing-function: ease-in;
+  transition-duration: 0.1s;
+}
+
+.button:hover{
+  background: #50ffdc;
+  color: black;
+}
+
+
